@@ -1,0 +1,18 @@
+---
+#    ___      ___                 _         
+#   / _/_ _  / _/__  ___ _______ (_)______ _
+#  / _/  ' \/ _/ _ \/ -_) __/ -_) / __/ _ `/
+# /_//_/_/_/_// .__/\__/_/  \__/_/_/  \_,_/ 
+#            /_/         
+# drupal dev update/upgrade setup.
+
+- name: Install base software
+  apt:
+    name:
+      - composer
+      - php-cli
+      - php-codesniffer
+    state: present
+  become: yes
+
+
