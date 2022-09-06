@@ -7,7 +7,7 @@
 # drupal dev update/upgrade setup.
 
 - name: Install base software
-  apt:
+  ansible.builtin.apt:
     name:
       - composer
       - php-cli

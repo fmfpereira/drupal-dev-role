@@ -7,7 +7,7 @@
 # drupal dev setup.
 
 - name: Install coder
-  composer:
+  community.general.composer:
     command: require
     global_command: yes
     arguments: drupal/coder
